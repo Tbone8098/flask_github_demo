@@ -8,6 +8,7 @@ def new_user():
 
 @app.route('/user/create', methods=['post'])
 def create_user():
+    print(request.form)
     return 'create user'
 
 @app.route('/user/<int:id>')
