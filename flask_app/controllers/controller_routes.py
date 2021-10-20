@@ -8,6 +8,7 @@ def index():
 
 @app.route('/dashboard')
 def dashboard():
+    # dashboard is ready to go!
     return render_template('dashboard.html')
 
 @app.route('/', defaults={'path': ''})
